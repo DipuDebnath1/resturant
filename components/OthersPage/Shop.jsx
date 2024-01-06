@@ -32,7 +32,7 @@ const [tru, setTru] = useState(true);
 
   useEffect(() => {
     async function products() {
-      await fetch("http://localhost:5002/restaurant")
+      await fetch("https://zdcws3h5-5002.asse.devtunnels.ms/restaurant")
         .then((res) => res.json())
         .then((data) => {
           setAllproduct(data);
@@ -72,7 +72,7 @@ const [tru, setTru] = useState(true);
 
   useEffect(() => {
     async function products() {
-      await fetch(" http://localhost:5002/restaurant")
+      await fetch(" https://zdcws3h5-5002.asse.devtunnels.ms/restaurant")
         .then((res) => res.json())
         .then((data) => {
           setAllproduct(data);

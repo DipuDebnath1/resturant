@@ -13,7 +13,7 @@ export default function SingleCategory({params}) {
   
   useEffect(() => {
     const fetchData = async () => {
-      const res = await fetch("http://localhost:5002/restaurant");
+      const res = await fetch("https://zdcws3h5-5002.asse.devtunnels.ms/restaurant");
       const product = await res.json();
       setAllproduct(product);
     };

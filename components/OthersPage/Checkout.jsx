@@ -29,7 +29,7 @@ function Checkout({ params }) {
   const [product, setProduct] = useState([]);
   useEffect(() => {
     async function mainProduct() {
-      await fetch(`http://localhost:5002/restaurant/${params.id}`)
+      await fetch(`https://zdcws3h5-5002.asse.devtunnels.ms/restaurant/${params.id}`)
         .then((res) => res.json())
         .then((data) => setProduct(data));
     }
